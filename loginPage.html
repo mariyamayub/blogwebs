@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="newstyle.css">
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <!---header-->
+
+  <!---NavBar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <a class="navbar-brand" href="#">Mime Graphics</a>
+   <!---collapse mob view-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <!----search bar-->
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+        <!---menu-->
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" >Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" >Blog Post</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" > Contact </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="file:///M:/Study/bootstrapExample/LoginPage.html" > Login </a>
+        </li>
+      </ul>
+      
+    </div>
+  </nav>
+
+        <!--Login-->
+        <div class="container w-50 h-70" style="background: url(sun.jpg); widows: 200%;" >
+            <h3  style="font-size: 30px; color:yellow;text-align: center; margin-top: 40px;"> We are happy to help you please Login for proceed. </h3>
+            &nbsp; &nbsp;
+            <form name="myform" method="post" action="file:///M:/Study/Projects/SimpleBlogWeb/slider.html" onsubmit="return validateform()">
+                <div class="row">
+                <div class="col form-group offset-4">
+                    <label for="txtUser" style="font-weight: bold; font-size:  20px; color:rgb(212, 233, 25); text-shadow: whitesmoke;"> User Name </label>
+                    <input type="text" id="name" class="form-control w-50 h-70" placeholder="Enter User name..." />
+                      <i class="fas fa-check-circle"></i>
+                      <i class="fas fa-exclamation-circle"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col form-group offset-4">
+                    <label for="txtUser" style="font-weight: bold; font-size: 20px; color:rgb(219, 216, 15);"> Password </label>
+                    <input type="text" id="password" class="form-control w-50 h-70" placeholder="Enter Password..."/>
+               </div>
+                </div>
+                
+              <div class="col form-group">
+                <div class="forgot-link " style="text-align: center;">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="remember">
+                        <label for="remember" style="color: white;">Remember Password</label>
+                    </div>
+                    <a href="#" style="color: orange;">Forgot Password?</a> 
+                
+            </div>
+            </div>
+                <div class="row">
+                    <div class="col form-group offset-4">
+                     <button type="submit" class="btn btn-primary btn-block w-50">Login</button>
+                     <p  class="mt-3" style="color:whitesmoke">Don't have an accoount?<a href="#" style="color: orange;">Registered Now </a> </p>
+                    </div>
+
+                </div>
+                <p id="ErrorMessage"></p>
+            </div>
+            
+            </form>
+  <br> <br>
+  <!---footer-->
+           <div class="container-fluid">
+            <div class="footer-bottom" style="background-color:rgb(54, 53, 53);">
+            
+             <div class="row justify-content-center">
+                 <div class="col-md-3  col-sm-6  segment-one text-center w-100" style="padding-top: 30px; ">
+                   <img src="m.png" alt="kj" width="20%">  
+                   <h3  style="color: rgb(197, 201, 7);">About Us</h3>
+                     
+                     <p style="color: white;"> For the first time ever, Bootstrap has its own open source SVG icon library,
+                          designed to work best with our components and documentation.</p>
+         
+                          <a href="#"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                          <a href="#" style="color: cornflowerblue;"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                          <a href="#" style="color: darkblue;"><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                          <a href="#" style="color: darkred; "><i class="fa fa-instagram"></i></a>
+                 </div>
+                 <form class="offset-2">
+                   <div class="row">
+                   <div class="col form-group">
+                     <h4 style="color: white; margin-top: 20px;">  Subcribe us for news Update</h4>
+                       <label for="txtUser" style=" font-size:20px; color:rgb(138, 146, 21); text-shadow: whitesmoke;"> Your Email </label>
+                       <input type="text" class="form-control1" placeholder="Enter your email..." />
+                       <button type="submit" class="btn btn-outline-warning w-20" style="margin-top: 20px;" >submit</button>
+                   </div>
+               </div>
+                   </div>
+                   </div>
+        </div>
+      
+
+
+    </div>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="loginScript.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

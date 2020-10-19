@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: blueviolet;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(red, green, blue);
+    width: 400px;
+    max-width: 100%;
+}
+
